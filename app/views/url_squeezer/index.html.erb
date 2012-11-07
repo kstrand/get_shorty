@@ -1,0 +1,18 @@
+<html>
+  <h1> Let's Shorten this S!*T </h1>
+
+  <%= form_for @url, :url => url_squeezer_index_path, :method => :post do |f| %>
+    <%= f.label "Give me your url !"%>
+    <%= f.text_field :body%>
+    <%= f.submit "Create" %>
+  <% end %>
+
+<div>
+  <ul>
+    <%@urls.each do |url|%>
+      <li><a href=<%="http://#{url.body}"%>> <%= url.body%> </a></li>
+    <%end%>
+  </ul>
+</div>
+
+</html>
