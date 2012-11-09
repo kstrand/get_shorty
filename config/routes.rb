@@ -4,6 +4,8 @@ GetShorty::Application.routes.draw do
 
   resources :url_squeezer
 
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

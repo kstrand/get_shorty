@@ -8,6 +8,9 @@
   <% end %>
 
 <div>
+  found     <%= Url.count %> urls
+   last one <%= Url.last.body %> urls
+
   <ul>
     <%@urls.each do |url|%>
       <li><a href=<%="http://#{url.body}"%>> <%= url.body%> </a></li>
